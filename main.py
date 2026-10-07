@@ -1,5 +1,9 @@
+import requests
 def greet(name) :
     return f"Hello,{name}"
 
 if __name__=="__main__":
-       print (greet("python class"))
+       print (greet("github class"))
+
+r=requests.get("https://api.github.com")
+print("Github status:", r.status_code)
